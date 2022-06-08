@@ -1,0 +1,43 @@
+.grid-wrapper {
+	min-width: 1024px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+}
+
+.grid-cell {
+	box-shadow: 1pt 1pt 1.5pt gray;
+	border-radius: 0.5em;
+}
+
+.cell-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cell-body {
+	margin: 1em auto;
+}
+
+.cell-body > li {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+.ava {
+	float: left;
+	margin: 0 1em;
+	width: 40pt;
+	border-radius: 20pt;
+}
+
+.contact-name {
+	margin: 0.5em auto;
+	font-size: 16pt;
+	font-weight: 500;
+}
+
+.job-title {
+	color: #777;
+}

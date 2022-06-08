@@ -1,0 +1,16 @@
+<!-- <pre>{{contacts | json}}</pre> -->
+<!-- *ngFor="let contact of contacts" -->
+<div class="grid-wrapper">
+	<div class="grid-cell" *ngFor="let contact of contacts">
+		<div class="cell-header">
+			<img class="ava" src="{{contact.avatarUrl}}" />
+			<div class="contact-name">{{contact.name}}</div>
+			<div class="job-title">{{contact.jobTitle}}</div>
+		</div>
+		<ul class="cell-body">
+			<li>{{contact.telephone}}</li>
+			<li>{{contact.email}}</li>
+			<li>{{contact.address}}</li>
+		</ul>
+	</div>
+</div>
