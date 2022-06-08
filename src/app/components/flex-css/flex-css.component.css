@@ -1,0 +1,21 @@
+.flex-wrapper {
+	display: flex;
+	flex-flow: row wrap-reverse;
+	height: 165px;
+}
+
+.flex-wrapper > button:nth-child(odd) {
+	align-self: flex-start;
+}
+
+.flex-wrapper > button:nth-child(even) {
+	align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+	.flex-wrapper {
+		flex-flow: column wrap;
+		height: auto;
+		width: 165px;
+	}
+}
